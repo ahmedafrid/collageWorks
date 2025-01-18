@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Website</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Course Website</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="course.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="quiz.html">Quiz</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    
+    <div class="container" id="first-container">
+        <h2 class="my-5 text-center">Introduction to post-test questionnaire</h2>
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 d-block d-md-none">
+              <img src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=2000" alt="" class="img-fluid w-200" style="width: 400px" />
+          </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 d-flex align-items-center">
+                <div>
+                    <h3>Are you ready to test your knowledge?</h3>
+                    <p class="italic">Click/tap Next Section to start.</p>
+                    <div class="text-center my-4 d-grid gap-2 d-block d-md-none">
+                      <button class="btn btn-lg btn-outline-primary mt-2" onclick="hide()"> Ready </button>
+                    </div>
+                    <button class="btn btn-lg btn-outline-primary d-none d-md-block" onclick="hide()"  href="#">Ready</button>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-6">
+                <img src="https://img.freepik.com/free-vector/learning-concept-illustration_114360-6186.jpg?w=2000" alt="" class="img-fluid w-200" style="width: 400px" />
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="second-container">
+        <h2 class="my-5 text-center">Post-test questionnaire</h2>
+
+        <div class="row" id="quiz">
+                <div id="con">
+                    <!-- geting Questions from js objects-->
+                </div>
+                <div class="text-center my-4 d-grid gap-2">
+                    <button class="btn btn-lg btn-success mt-2" onclick="result()"> Result </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="text-muted">&copy; 2022 Ahmed Afrid</span>
+          </div>
+      
+          <div class="justify-content-end text-muted">
+            All rights reserved
+          </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>

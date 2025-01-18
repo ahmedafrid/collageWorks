@@ -1,0 +1,21 @@
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: rgba(255, 255, 255, 0.582);
+}
+
+
+#second-container {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
