@@ -1,0 +1,61 @@
+
+<%- include("partials/header"); -%>
+
+<body style="background-color: white; color:black">
+<div class="container mt-4">
+<h1>Compose new post</h1>
+
+<form action="/compose" method="post">
+
+  <div class="row">
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Your Name</label>
+        <input type="text" class="form-control" name="userName">
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Date</label>
+        <input type="date" class="form-control"name="date">
+      </div>
+    </div>
+
+  </div>
+  
+  
+
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Title</label>
+      <input type="text" class="form-control" id="title" name="postTitle" required>
+    </div>
+    
+    
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Description</label>
+      <textarea type="text" class="form-control" name="postBody" rows="5" required> </textarea>
+    </div>
+
+    <button id="button" type="submit" class="btn btn-primary">Submit</button>
+
+    <script> 
+      let btn = document.getElementById("button");
+      let title = document.getElementById("title");
+      let cnt =0; //to see if user is typed
+      let input = title.addEventListener("input", function(input) {
+        console.log(input.target.value);
+        cnt++;
+      })
+
+      btn.addEventListener("click", function() {
+        if(cnt>0) {
+          alert("Post Added Successfully, Thank you for writing!");
+          window.location.href="http://localhost:3000/about";
+        } else {
+          alert("Please Enter Title");
+        }
+      })
+    </script>
+  </form>
+</div>
+</body>

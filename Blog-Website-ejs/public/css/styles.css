@@ -1,0 +1,37 @@
+
+.navbar {
+    font-size: 16px;
+    padding: 1% 0;
+    text-align: center;
+    background-color: #645CAA !important;
+}
+
+.navbar-brand, li a {
+    color: #EBC7E8 !important;
+}
+
+
+.navbar-nav  li a:hover {
+    color: #533483 !important;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.username-color {
+    color: #A084CA;
+}
+
+footer {
+	background-color: #645CAA;
+    bottom: 0% !important;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #fff;
+    padding-top: 20px;
+}
